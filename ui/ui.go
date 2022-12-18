@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/adimash1337/GoWebProj/model"
+	"github.com/grisha/gowebapp/model"
 )
 
 type Config struct {
