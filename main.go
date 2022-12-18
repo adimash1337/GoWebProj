@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/adimash1337/GoWebProj/daemon"
+	"github.com/grisha/gowebapp/daemon"
 )
 
 var assetsPath string
@@ -14,7 +14,7 @@ func processFlags() *daemon.Config {
 	cfg := &daemon.Config{}
 
 	flag.StringVar(&cfg.ListenSpec, "listen", "localhost:3000", "HTTP listen spec")
-	flag.StringVar(&cfg.Db.ConnectString, "db-connect", "host=/var/run/postgresql dbname=gowebapp sslmode=disable", "DB Connect String")
+	flag.StringVar(&cfg.Db.ConnectString, "db-connect", "host=/var/run/postgresql dbname=adimash sslmode=disable", "DB Connect String")
 	flag.StringVar(&assetsPath, "assets-path", "assets", "Path to assets dir")
 
 	flag.Parse()
